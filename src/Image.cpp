@@ -2,7 +2,7 @@
 #include "Device.h"
 #include "ResourceRepository.h"
 #include "VkHelpers.h"
-#include "third-party/stb_image.h"
+#include "../third-party/stb/stb_image.h"
 
 #include <filesystem>
 #include <spdlog/fmt/fmt.h>

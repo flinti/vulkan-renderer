@@ -2,4 +2,4 @@
 #ifndef NDEBUG
 #undef __OPTIMIZE__
 #endif
-#include "stb_image.h"
+#include "stb/stb_image.h"

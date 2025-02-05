@@ -3,7 +3,7 @@
 #include "Resource.h"
 #include "Utility.h"
 #include "Vertex.h"
-#include "third-party/stb_image.h"
+#include "../third-party/stb/stb_image.h"
 
 #include <algorithm>
 #include <array>
@@ -115,6 +115,7 @@ void ResourceRepository::loadObj(const ResourceKey &name, const std::filesystem:
     tinyobj::attrib_t attrib{};
     std::vector<tinyobj::shape_t> shapes;
     std::vector<tinyobj::material_t> materials;
+    std::string warn;
     std::string error;
     std::string mtlBasePath = path.parent_path().native();
     if (!mtlBasePath.empty()) {
@@ -127,12 +128,16 @@ void ResourceRepository::loadObj(const ResourceKey &name, const std::filesystem:
         &attrib,
         &shapes,
         &materials,
+        &warn,
         &error,
         path.c_str(),
         mtlBasePath.c_str()
     );
     if (!ok || !error.empty()) {
         throw std::runtime_error(fmt::format("Failed to load mesh {}: {}", name, error));
+    }
+    if (!warn.empty()) {
+        spdlog::warn("ResourceRepository::loadObj: loading {}: {}", name, warn);
     }
 
     std::unordered_map<size_t, size_t> vertexHashIndexMap;

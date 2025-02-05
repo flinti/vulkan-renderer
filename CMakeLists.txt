@@ -19,19 +19,15 @@ endif()
 link_libraries(spdlog::spdlog $<$<BOOL:${MINGW}>:ws2_32>)
 link_libraries(glfw)
 link_libraries(Vulkan::Vulkan)
-target_link_libraries(GPUOpen::VulkanMemoryAllocator)
 
-file(GLOB vulkan_srcs CONFIGURE_DEPENDS
-    "src/*.h"
-    "src/*.cpp"
-    "src/third-party/*.h"
-    "src/third-party/*.cpp"
-    "src/third-party/spirv_reflect/*.cpp"
+file(GLOB vulkan-renderer-srcs CONFIGURE_DEPENDS
+    "./src/*.cpp"
 )
 
-add_executable(application ${vulkan_srcs})
+add_executable(vulkan-renderer ${vulkan-renderer-srcs})
+add_subdirectory(third-party)
 
-target_precompile_headers(application
+target_precompile_headers(vulkan-renderer
     PUBLIC
     <vulkan/vulkan_core.h>
     <spdlog/spdlog.h>

@@ -6,8 +6,8 @@
 #include "Image.h"
 #include "Resource.h"
 #include "Shader.h"
-#include "third-party/spirv_reflect/spirv_reflect.h"
-#include "third-party/tiny_obj_loader.h"
+#include "../third-party/spirv-reflect/spirv_reflect.h"
+#include "../third-party/tinyobjloader/tiny_obj_loader.h"
 #include <cstddef>
 #include <filesystem>
 #include <string>
