@@ -247,7 +247,7 @@ void Application::createInitialObjects()
 
 	spdlog::info("add cone...");
 	addObject(
-		resourceRepository->getMesh("mesh/Low-Poly Plant_"),
+		resourceRepository->getMesh("mesh/cone"),
 		glm::mat4{1.f},
 		"mid"
 	);
