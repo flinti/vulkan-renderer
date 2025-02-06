@@ -5,7 +5,6 @@
 #include "VkHash.h"
 #include "VkHelpers.h"
 
-#include "../third-party/spdlog/include/spdlog/fmt/fmt.h"
 #include "../third-party/spdlog/include/spdlog/spdlog.h"
 #include <utility>
 #include <vulkan/vulkan.h>

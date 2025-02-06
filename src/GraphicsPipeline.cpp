@@ -10,9 +10,7 @@
 
 #include <cstddef>
 #include <cstdint>
-#include "../third-party/spdlog/include/spdlog/fmt/fmt.h"
 #include <array>
-#include "../third-party/spdlog/include/spdlog/spdlog.h"
 #include <stdexcept>
 #include <unordered_map>
 #include <utility>

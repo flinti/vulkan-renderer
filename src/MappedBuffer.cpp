@@ -3,7 +3,6 @@
 
 #include <cstring>
 #include <fmt/format.h>
-#include "../third-party/spdlog/include/spdlog/spdlog.h"
 #include <vulkan/vulkan.h>
 #include <vulkan/vk_enum_string_helper.h>
 

@@ -6,7 +6,6 @@
 #include "VulkanObjectCache.h"
 
 #include <memory>
-#include "../third-party/spdlog/include/spdlog/logger.h"
 #include "../third-party/spdlog/include/spdlog/spdlog.h"
 #include <vulkan/vulkan.h>
 #include <optional>
