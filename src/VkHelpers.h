@@ -1,7 +1,7 @@
-#include <vulkan/vulkan_core.h>
+#include <vulkan/vulkan.h>
 #include <vulkan/vk_enum_string_helper.h>
 #include <stdexcept>
-#include <spdlog/fmt/fmt.h>
+#include "../third-party/spdlog/include/spdlog/fmt/fmt.h"
 
 #define VK_ASSERT_IMPL(x, file, line) do { \
     VkResult result = x; \

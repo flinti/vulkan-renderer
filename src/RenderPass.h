@@ -1,7 +1,7 @@
 #ifndef RENDER_PASS_H_
 #define RENDER_PASS_H_
 
-#include <vulkan/vulkan_core.h>
+#include <vulkan/vulkan.h>
 
 class RenderPass
 {

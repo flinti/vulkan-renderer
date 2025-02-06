@@ -2,10 +2,10 @@
 #include "VkHelpers.h"
 #include <cstddef>
 #include <cstdint>
-#include <spdlog/spdlog.h>
+#include "../third-party/spdlog/include/spdlog/spdlog.h"
 #include <utility>
-#include <vk_mem_alloc.h>
-#include <vulkan/vulkan_core.h>
+#include "../third-party/VulkanMemoryAllocator/include/vk_mem_alloc.h"
+#include <vulkan/vulkan.h>
 
 DeviceAllocator::DeviceAllocator(
     VkInstance instance, 

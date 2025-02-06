@@ -4,8 +4,8 @@
 #include <algorithm>
 #include <cstdint>
 #include <stdexcept>
-#include <spdlog/fmt/fmt.h>
-#include <vulkan/vulkan_core.h>
+#include "../third-party/spdlog/include/spdlog/fmt/fmt.h"
+#include <vulkan/vulkan.h>
 
 SwapChain::SwapChain(
 	SwapChainSupportDetails swapChainSupportDetails,

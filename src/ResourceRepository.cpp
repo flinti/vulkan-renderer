@@ -17,11 +17,11 @@
 #include <memory>
 #include <stdexcept>
 #include <string>
-#include <spdlog/spdlog.h>
+#include "../third-party/spdlog/include/spdlog/spdlog.h"
 #include <unordered_map>
 #include <utility>
 #include <vector>
-#include <vulkan/vulkan_core.h>
+#include <vulkan/vulkan.h>
 
 using namespace std::filesystem;
 

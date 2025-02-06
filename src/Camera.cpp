@@ -10,8 +10,8 @@
 #include <glm/gtc/constants.hpp>
 #include <glm/trigonometric.hpp>
 #include <limits>
-#include <spdlog/spdlog.h>
-#include <vulkan/vulkan_core.h>
+#include "../third-party/spdlog/include/spdlog/spdlog.h"
+#include <vulkan/vulkan.h>
 
 Camera::Camera()
     : fovy(glm::radians(45.f)),

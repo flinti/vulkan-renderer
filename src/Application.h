@@ -29,10 +29,10 @@
 #include <cstdint>
 #include <filesystem>
 #include <optional>
-#include <spdlog/spdlog.h>
+#include "../third-party/spdlog/include/spdlog/spdlog.h"
 #include <unordered_map>
 #include <vector>
-#include <vulkan/vulkan_core.h>
+#include <vulkan/vulkan.h>
 
 
 class Application

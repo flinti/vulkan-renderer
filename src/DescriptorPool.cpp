@@ -3,8 +3,8 @@
 
 #include <map>
 #include <utility>
-#include <spdlog/fmt/fmt.h>
-#include <vulkan/vulkan_core.h>
+#include "../third-party/spdlog/include/spdlog/fmt/fmt.h"
+#include <vulkan/vulkan.h>
 
 DescriptorPool::DescriptorPool(VkDevice device, const DescriptorSetLayout &layout, uint32_t poolSize)
     : device(device), layout(layout), poolMaxSize(poolSize)

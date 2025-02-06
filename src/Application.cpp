@@ -7,7 +7,6 @@
 #include "ResourceRepository.h"
 #include "VkHelpers.h"
 
-#include <GLFW/glfw3.h>
 #include <array>
 #include <chrono>
 #include <cmath>
@@ -26,15 +25,14 @@
 #include <glm/gtc/constants.hpp>
 #include <glm/matrix.hpp>
 #include <glm/trigonometric.hpp>
-#include <spdlog/common.h>
-#include <spdlog/spdlog.h>
+#include "../third-party/spdlog/include/spdlog/spdlog.h"
 #include <thread>
 #include <glm/gtc/matrix_transform.hpp>
 #include <memory>
 #include <stdexcept>
 #include <utility>
 #include <vector>
-#include <vulkan/vulkan_core.h>
+#include <vulkan/vulkan.h>
 #include <vulkan/vk_enum_string_helper.h>
 #include <sstream>
 

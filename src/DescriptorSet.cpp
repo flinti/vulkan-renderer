@@ -3,8 +3,8 @@
 #include "VkHelpers.h"
 
 #include <stdexcept>
-#include <spdlog/spdlog.h>
-#include <vulkan/vulkan_core.h>
+#include "../third-party/spdlog/include/spdlog/spdlog.h"
+#include <vulkan/vulkan.h>
 
 DescriptorSet::DescriptorSet(
     VkDevice device,

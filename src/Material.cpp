@@ -5,9 +5,9 @@
 #include "Image.h"
 #include "VkHelpers.h"
 #include <cstdint>
-#include <spdlog/spdlog.h>
+#include "../third-party/spdlog/include/spdlog/spdlog.h"
 #include <utility>
-#include <vulkan/vulkan_core.h>
+#include <vulkan/vulkan.h>
 
 
 Material::Material(uint32_t id, Device &device, const MaterialResource &resource)

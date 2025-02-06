@@ -7,7 +7,7 @@
 #include <cstdint>
 #include <glm/fwd.hpp>
 #include <vector>
-#include <vulkan/vulkan_core.h>
+#include <vulkan/vulkan.h>
 
 class Mesh
 {

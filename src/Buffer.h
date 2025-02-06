@@ -3,8 +3,8 @@
 
 #include "DeviceAllocator.h"
 #include <cstdint>
-#include <vulkan/vulkan_core.h>
-#include <vk_mem_alloc.h>
+#include <vulkan/vulkan.h>
+#include "../third-party/VulkanMemoryAllocator/include/vk_mem_alloc.h"
 
 class Buffer
 {

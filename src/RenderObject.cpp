@@ -5,8 +5,8 @@
 
 #include <glm/ext/matrix_float4x4.hpp>
 #include <utility>
-#include <vulkan/vulkan_core.h>
-#include <spdlog/spdlog.h>
+#include <vulkan/vulkan.h>
+#include "../third-party/spdlog/include/spdlog/spdlog.h"
 
 RenderObject::RenderObject(
     uint32_t id,

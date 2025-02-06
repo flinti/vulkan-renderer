@@ -6,7 +6,7 @@
 #include "Resource.h"
 #include "Shader.h"
 
-#include <vulkan/vulkan_core.h>
+#include <vulkan/vulkan.h>
 #include <vector>
 #include <glm/mat4x4.hpp>
 #include <glm/vec4.hpp>

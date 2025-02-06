@@ -5,7 +5,7 @@
 #include "Resource.h"
 
 #include <utility>
-#include <vulkan/vulkan_core.h>
+#include <vulkan/vulkan.h>
 #include <filesystem>
 
 class DeviceAllocator;

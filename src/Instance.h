@@ -1,8 +1,8 @@
 #ifndef INSTANCE_H_
 #define INSTANCE_H_
 
-#include <vulkan/vulkan_core.h>
-#include <spdlog/spdlog.h>
+#include <vulkan/vulkan.h>
+#include "../third-party/spdlog/include/spdlog/spdlog.h"
 #include <vector>
 
 class Instance

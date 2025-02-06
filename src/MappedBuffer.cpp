@@ -3,8 +3,8 @@
 
 #include <cstring>
 #include <fmt/format.h>
-#include <spdlog/spdlog.h>
-#include <vulkan/vulkan_core.h>
+#include "../third-party/spdlog/include/spdlog/spdlog.h"
+#include <vulkan/vulkan.h>
 #include <vulkan/vk_enum_string_helper.h>
 
 MappedBuffer::MappedBuffer(DeviceAllocator &allocator, size_t size, VkBufferUsageFlags usage)

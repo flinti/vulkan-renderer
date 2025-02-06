@@ -5,10 +5,10 @@
 #include "VkHash.h"
 #include "VkHelpers.h"
 
-#include <spdlog/fmt/fmt.h>
-#include <spdlog/spdlog.h>
+#include "../third-party/spdlog/include/spdlog/fmt/fmt.h"
+#include "../third-party/spdlog/include/spdlog/spdlog.h"
 #include <utility>
-#include <vulkan/vulkan_core.h>
+#include <vulkan/vulkan.h>
 
 Frame::Frame(Device &device, uint32_t renderQueueFamilyIndex)
     : device(device),

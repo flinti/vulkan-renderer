@@ -1,7 +1,7 @@
 #include "Instance.h"
 #include "VkHelpers.h"
 
-#include <vulkan/vulkan_core.h>
+#include <vulkan/vulkan.h>
 #include <sstream>
 
 Instance::Instance(

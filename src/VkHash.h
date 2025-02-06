@@ -5,7 +5,7 @@
 #include "DescriptorSet.h"
 #include "Utility.h"
 
-#include <vulkan/vulkan_core.h>
+#include <vulkan/vulkan.h>
 #include <unordered_map>
 
 

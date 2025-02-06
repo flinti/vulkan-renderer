@@ -3,8 +3,8 @@
 #include <glm/detail/qualifier.hpp>
 #include <glm/fwd.hpp>
 #include <glm/geometric.hpp>
-#include <spdlog/spdlog.h>
-#include <vulkan/vulkan_core.h>
+#include "../third-party/spdlog/include/spdlog/spdlog.h"
+#include <vulkan/vulkan.h>
 
 
 

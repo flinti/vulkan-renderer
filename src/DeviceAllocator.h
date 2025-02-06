@@ -5,8 +5,8 @@
 #include <functional>
 #include <utility>
 #include <vector>
-#include <vk_mem_alloc.h>
-#include <vulkan/vulkan_core.h>
+#include "../third-party/VulkanMemoryAllocator/include/vk_mem_alloc.h"
+#include <vulkan/vulkan.h>
 
 class Device;
 

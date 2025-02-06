@@ -8,7 +8,7 @@
 #include "Shader.h"
 #include <memory>
 #include <unordered_map>
-#include <vulkan/vulkan_core.h>
+#include <vulkan/vulkan.h>
 
 class Device;
 

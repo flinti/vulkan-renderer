@@ -3,8 +3,8 @@
 #include <array>
 #include <cstdint>
 #include <stdexcept>
-#include <spdlog/fmt/fmt.h>
-#include <vulkan/vulkan_core.h>
+#include "../third-party/spdlog/include/spdlog/fmt/fmt.h"
+#include <vulkan/vulkan.h>
 
 RenderPass::RenderPass(VkDevice device, VkFormat imageFormat)
     : device(device),

@@ -5,7 +5,7 @@
 #include <cstdlib>
 #include <glm/common.hpp>
 #include <glm/fwd.hpp>
-#include <spdlog/fmt/fmt.h>
+#include "../third-party/spdlog/include/spdlog/fmt/fmt.h"
 #include <fstream>
 
 std::vector<std::byte> Utility::readFile(std::filesystem::path path)

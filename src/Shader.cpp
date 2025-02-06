@@ -8,7 +8,7 @@
 #include <stdexcept>
 #include <string>
 #include <vulkan/vk_enum_string_helper.h>
-#include <vulkan/vulkan_core.h>
+#include <vulkan/vulkan.h>
 
 Shader::Shader(
     Device &device,

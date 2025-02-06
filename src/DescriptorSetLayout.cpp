@@ -2,9 +2,9 @@
 #include "VkHelpers.h"
 
 #include <stdexcept>
-#include <spdlog/fmt/fmt.h>
+#include "../third-party/spdlog/include/spdlog/fmt/fmt.h"
 #include <utility>
-#include <vulkan/vulkan_core.h>
+#include <vulkan/vulkan.h>
 
 DescriptorSetLayout::DescriptorSetLayout(VkDevice device, const std::vector<VkDescriptorSetLayoutBinding> &bindings)
     : device(device), bindings(bindings)

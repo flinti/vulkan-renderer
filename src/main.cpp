@@ -1,8 +1,8 @@
 #include <string>
 #include <set>
-#include <spdlog/common.h>
-#include <spdlog/spdlog.h>
-#include <spdlog/sinks/stdout_color_sinks.h>
+#include "../third-party/spdlog/include/spdlog/common.h"
+#include "../third-party/spdlog/include/spdlog/spdlog.h"
+#include "../third-party/spdlog/include/spdlog/sinks/stdout_color_sinks.h"
 
 #include "Application.h"
 

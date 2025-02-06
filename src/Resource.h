@@ -10,7 +10,7 @@
 #include <string>
 #include <unordered_map>
 #include <vector>
-#include <vulkan/vulkan_core.h>
+#include <vulkan/vulkan.h>
 
 class Mesh;
 

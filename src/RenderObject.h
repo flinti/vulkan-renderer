@@ -8,7 +8,7 @@
 #include <map>
 #include <memory>
 #include <string>
-#include <vulkan/vulkan_core.h>
+#include <vulkan/vulkan.h>
 #include <glm/mat4x4.hpp>
 
 class Material;

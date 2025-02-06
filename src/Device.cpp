@@ -4,7 +4,6 @@
 #include "Instance.h"
 #include "VulkanObjectCache.h"
 
-#include <GLFW/glfw3.h>
 #include <iomanip>
 #include <ios>
 #include <memory>
@@ -12,7 +11,7 @@
 #include <sstream>
 #include <set>
 #include <vulkan/vk_enum_string_helper.h>
-#include <vulkan/vulkan_core.h>
+#include <vulkan/vulkan.h>
 
 Device::Device(
 	Instance &instance, 

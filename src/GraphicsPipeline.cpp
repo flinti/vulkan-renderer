@@ -10,15 +10,15 @@
 
 #include <cstddef>
 #include <cstdint>
-#include <spdlog/fmt/fmt.h>
+#include "../third-party/spdlog/include/spdlog/fmt/fmt.h"
 #include <array>
-#include <spdlog/spdlog.h>
+#include "../third-party/spdlog/include/spdlog/spdlog.h"
 #include <stdexcept>
 #include <unordered_map>
 #include <utility>
 #include <vector>
 #include <vulkan/vk_enum_string_helper.h>
-#include <vulkan/vulkan_core.h>
+#include <vulkan/vulkan.h>
 
 GraphicsPipeline::GraphicsPipeline(
         Device &device,

@@ -2,7 +2,7 @@
 #include "Device.h"
 #include "VkHelpers.h"
 
-#include <vulkan/vulkan_core.h>
+#include <vulkan/vulkan.h>
 
 DepthImage::DepthImage(Device &device, uint32_t width, uint32_t height)
     : device(device),

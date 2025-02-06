@@ -3,7 +3,7 @@
 
 #include "DeviceAllocator.h"
 
-#include <vulkan/vulkan_core.h>
+#include <vulkan/vulkan.h>
 
 class DepthImage
 {

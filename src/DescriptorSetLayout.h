@@ -2,7 +2,7 @@
 #define DESCRIPTORSETLAYOUT_H_
 
 #include <map>
-#include <vulkan/vulkan_core.h>
+#include <vulkan/vulkan.h>
 #include <vector>
 
 class DescriptorSetLayout

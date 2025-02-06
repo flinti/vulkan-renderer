@@ -5,8 +5,8 @@
 #include "VkHelpers.h"
 #include "VkHash.h"
 #include <memory>
-#include <spdlog/spdlog.h>
-#include <vulkan/vulkan_core.h>
+#include "../third-party/spdlog/include/spdlog/spdlog.h"
+#include <vulkan/vulkan.h>
 
 VulkanObjectCache::VulkanObjectCache(Device &device)
     : device(device)

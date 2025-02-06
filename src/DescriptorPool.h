@@ -6,7 +6,7 @@
 #include <cstddef>
 #include <cstdint>
 #include <map>
-#include <vulkan/vulkan_core.h>
+#include <vulkan/vulkan.h>
 #include <vector>
 
 class DescriptorPool
