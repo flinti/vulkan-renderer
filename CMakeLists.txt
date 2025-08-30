@@ -36,7 +36,7 @@ target_precompile_headers(vulkan-renderer
 
 # shader compilation
 
-set(SHADER_SRC_DIR "./data/shader_src")
+set(SHADER_SRC_DIR "./data/shader-src")
 set(SHADER_BIN_DIR "./data/shader")
 
 file(GLOB SHADER_SRCS CONFIGURE_DEPENDS
