@@ -207,6 +207,7 @@ void Application::createSwapChainAndFramebuffers(const SwapChainSupportDetails &
 		static_cast<uint32_t>(wdt), 
 		static_cast<uint32_t>(hgt)
 	);
+	spdlog::info("Created swap chain with {} images", swapChain->getImageCount());
 	depthImage = std::make_unique<DepthImage>(
 		*device, 
 		static_cast<uint32_t>(wdt), 
@@ -440,7 +441,7 @@ void Application::draw()
 		&imageIndex, 
 		imageAvailableSemaphore
 	);
-	// framebufferJustResized is handled near the end of this function (deviating from the tutorial) 
+	// needsSwapChainRecreation is handled near the end of this function (deviating from the tutorial) 
 	// to avoid that the image available semaphore occasionally remains signalled
 	if (result == VK_SUBOPTIMAL_KHR || result == VK_ERROR_OUT_OF_DATE_KHR) {
 		recreateSwapChain();

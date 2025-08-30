@@ -151,11 +151,12 @@ void SwapChain::createSwapChain(
     VkPresentModeKHR presentMode = chooseSwapPresentMode(swapChainSupportDetails.presentModes);
     VkExtent2D extent = chooseSwapExtent(swapChainSupportDetails.capabilities, framebufferWdt, framebufferHgt);
 
-	uint32_t imageCount = std::clamp(
-		swapChainSupportDetails.capabilities.minImageCount + 1, 
-		swapChainSupportDetails.capabilities.minImageCount, 
-		swapChainSupportDetails.capabilities.maxImageCount > 0 ? swapChainSupportDetails.capabilities.maxImageCount : std::numeric_limits<uint32_t>::max()
-	);
+	uint32_t imageCount = swapChainSupportDetails.capabilities.minImageCount;
+	if (swapChainSupportDetails.capabilities.maxImageCount > 0 && 
+		imageCount > swapChainSupportDetails.capabilities.maxImageCount
+	) {
+		imageCount = swapChainSupportDetails.capabilities.maxImageCount;
+	}
 
 	VkSwapchainCreateInfoKHR createInfo{};
 	createInfo.sType = VK_STRUCTURE_TYPE_SWAPCHAIN_CREATE_INFO_KHR;
