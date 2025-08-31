@@ -108,6 +108,9 @@ const ShaderResource &ResourceRepository::getVertexShader(const ResourceKey &nam
     return i->second;
 }
 
+/**
+ * This loader only supports one material per object. All other materials are ignored.
+ */
 void ResourceRepository::loadObj(const ResourceKey &name, const std::filesystem::path &path)
 {
     spdlog::info("Loading .obj object {} ", path.string());
@@ -212,13 +215,12 @@ void ResourceRepository::loadObj(const ResourceKey &name, const std::filesystem:
     }
 
 
-    std::map<int, const MaterialResource *> materialResources;
-    for (int i = 0; i < static_cast<int>(materials.size()); ++i) {
-        materialResources[i] = loadObjMaterial(materials[i]);
+    // This loader only supports one material per object
+    const MaterialResource *mat = nullptr;
+    if (materialIdx >= 0 && materialIdx < materials.size()) {
+        mat = loadObjMaterial(materials[materialIdx]);
     }
-    // TODO: actually assign all materials and not just the first
-    const auto iter = materialResources.find(materialIdx);
-    const MaterialResource *mat =  iter != materialResources.end() ? iter->second : nullptr;
+
     meshes.emplace(
         name,
         MeshResource{
